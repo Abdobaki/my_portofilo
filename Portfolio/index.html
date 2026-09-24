@@ -3,20 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Unifex, Social Media, and Digital Marketing Agency HTML Template. Fully responsive, creative design, and easy to customize. Ideal for Unifex agencies, marketing firms, and startups."
-    />
-    <meta
-      name="keywords"
-      content="Unifex HTML Template, Digital Marketing, Social Media Agency, Marketing Template, Advertising Agency, Creative Agency, Bootstrap, Responsive"
-    />
+    <meta name="description" content="Portfolio of Abdelbaki Nasri - Software Developer specializing in React, Next.js, TypeScript, Go, Electron, Docker, and SQLite. Building high-performance business applications, POS workflows, and AI systems." />
+    <meta name="keywords" content="Abdelbaki Nasri, Software Developer, Full-Stack Developer, POS Systems, React, Next.js, TypeScript, Go, Electron, SQLite, Docker, MediaPipe, Algeria" />
+    <meta name="author" content="Abdelbaki Nasri" />
     <meta name="robots" content="INDEX,FOLLOW" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#d2ff00" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://abdobaki.github.io/my_portofilo/" />
+    <meta property="og:title" content="Abdelbaki Nasri - Software Developer | Portfolio" />
+    <meta property="og:description" content="Software Developer specializing in React, Next.js, TypeScript, Go, Electron, Docker, and SQLite. View my projects and engineering portfolio." />
+    <meta property="og:image" content="assets/images/thumbs/abdelbaki-about.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Abdelbaki Nasri - Software Developer | Portfolio" />
+    <meta name="twitter:description" content="Software Developer specializing in React, Next.js, TypeScript, Go, Electron, Docker, and SQLite. View my projects and engineering portfolio." />
+    <meta name="twitter:image" content="assets/images/thumbs/abdelbaki-about.jpg" />
+
     <!-- Title -->
-    <title>Unifex - Digital Agency & Creative Portfolio HTML Template</title>
+    <title>Abdelbaki Nasri - Software Developer | Portfolio</title>
     <!-- Favicon -->
     <link rel="icon" href="assets/images/logo/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/images/logo/favicon.png" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- Swiper Bundle -->
@@ -27,6 +39,8 @@
     <link rel="stylesheet" href="assets/css/aos.css" />
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   </head>
 
   <body class="tw-magic-cursor">
@@ -102,9 +116,9 @@
             class="tw-offcanvas-2-left-wrap d-flex justify-content-between align-items-center"
           >
             <div class="twoffcanvas__logo">
-              <a class="logo-1" href="index.html"
-                ><img src="assets/images/logo/logo.png" alt="logo"
-              /></a>
+              <a class="logo-1 d-inline-flex align-items-center text-decoration-none" href="index.html">
+                <span class="tw-text-3xl font-heading fw-bold text-white">Abdelbaki<span class="text-main-two-600">.</span></span>
+              </a>
             </div>
             <div class="tw-offcanvas-2-close d-md-none text-end">
               <button class="tw-offcanvas-2-close-btn tw-offcanvas-2-close-btn">
@@ -139,7 +153,16 @@
             </div>
           </div>
           <div class="tw-main-menu-mobile menu-hover-active counter-row">
-            <nav></nav>
+            <nav>
+              <ul class="py-4">
+                <li class="tw-mb-3"><a class="text-white tw-text-xl fw-semibold" href="#home">Home</a></li>
+                <li class="tw-mb-3"><a class="text-white tw-text-xl fw-semibold" href="#about">About Me</a></li>
+                <li class="tw-mb-3"><a class="text-white tw-text-xl fw-semibold" href="#services">Services &amp; Skills</a></li>
+                <li class="tw-mb-3"><a class="text-white tw-text-xl fw-semibold" href="#projects">Featured Projects</a></li>
+                <li class="tw-mb-3"><a class="text-white tw-text-xl fw-semibold" href="#contact">Contact</a></li>
+                <li class="tw-mb-3"><a class="text-main-two-600 tw-text-xl fw-bold" href="abdelbaki_cv.pdf" download="Abdelbaki_Nasri_CV.pdf">Download CV (PDF)</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
         <div
@@ -183,34 +206,37 @@
           >
             <div class="twoffcanvas__contact-info">
               <div class="twoffcanvas__contact-title">
-                <h5 class="text-white">Contact us</h5>
+                <h5 class="text-white">Get in touch</h5>
               </div>
               <ul>
                 <li>
                   <span class="text-main-two-600 tw-text-xl"
                     ><i class="ph ph-map-pin-line"></i
                   ></span>
-                  <a
-                    class="text-white"
-                    href="https://www.google.com/maps/@23.8223586,90.3661283,15z"
-                    target="_blank"
-                    >Manchester 21, Zurich, CH</a
-                  >
+                  <span class="text-white">M'sila, Algeria</span>
                 </li>
                 <li>
                   <span class="text-main-two-600 tw-text-xl"
                     ><i class="ph ph-envelope"></i
                   ></span>
-                  <a class="text-white" href="mailto:techubinfo@mail.com"
-                    ><span class="__cf_email__">omioinfo@mail.com</span></a
+                  <a class="text-white" href="mailto:abdelbaki.m.28@gmail.com"
+                    ><span>abdelbaki.m.28@gmail.com</span></a
                   >
                 </li>
                 <li>
                   <span class="text-main-two-600 tw-text-xl"
                     ><i class="ph ph-phone-call"></i
                   ></span>
-                  <a class="text-white" href="tel:+48555223224"
-                    >(+00) 678 345 98568</a
+                  <a class="text-white" href="tel:+213676865376"
+                    >+213 676 86 53 76</a
+                  >
+                </li>
+                <li>
+                  <span class="text-main-two-600 tw-text-xl"
+                    ><i class="ph ph-file-pdf"></i
+                  ></span>
+                  <a class="text-white" href="abdelbaki_cv.pdf" download="Abdelbaki_Nasri_CV.pdf"
+                    >Download Resume (PDF)</a
                   >
                 </li>
               </ul>
@@ -223,35 +249,35 @@
             >
               <ul class="tw-gap-2">
                 <li>
-                  <a href="#">
+                  <a href="https://github.com/Abdobaki" target="_blank">
                     <span
                       class="active-media d-flex align-items-center tw-gap-1"
-                      >Facebook <i class="ph ph-arrow-bend-up-right"></i
+                      >GitHub <i class="ph ph-arrow-bend-up-right"></i
                     ></span>
                     <span class="hover-media"
-                      ><i class="ph ph-facebook-logo"></i
+                      ><i class="ph ph-github-logo"></i
                     ></span>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://abdobaki.github.io/my_portofilo/" target="_blank">
                     <span
                       class="active-media d-flex align-items-center tw-gap-1"
-                      >INSTAGRAM <i class="ph ph-arrow-bend-up-right"></i
+                      >Portfolio <i class="ph ph-arrow-bend-up-right"></i
                     ></span>
                     <span class="hover-media"
-                      ><i class="ph ph-instagram-logo"></i
+                      ><i class="ph ph-globe"></i
                     ></span>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="mailto:abdelbaki.m.28@gmail.com">
                     <span
                       class="active-media d-flex align-items-center tw-gap-1"
-                      >LINKEDIN <i class="ph ph-arrow-bend-up-right"></i
+                      >Email <i class="ph ph-arrow-bend-up-right"></i
                     ></span>
                     <span class="hover-media"
-                      ><i class="ph ph-linkedin-logo"></i
+                      ><i class="ph ph-envelope"></i
                     ></span>
                   </a>
                 </li>
@@ -273,12 +299,8 @@
         >
           <!-- Logo Start -->
           <div class="header-three-logo tw-rounded-md">
-            <a href="index.html" class="link">
-              <img
-                src="assets/images/logo/logo-secendary.png"
-                alt="Logo"
-                class="max-w-200-px"
-              />
+            <a href="index.html" class="link d-inline-flex align-items-center text-decoration-none">
+              <span class="tw-text-3xl font-heading fw-bold text-heading">Abdelbaki<span class="text-main-two-600">.</span></span>
             </a>
           </div>
           <!-- Logo End  -->
@@ -288,178 +310,39 @@
             <ul class="d-flex tw-gap-205">
               <li>
                 <a
-                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
-                  href="#"
-                  ><i class="ph-bold ph-facebook-logo"></i
+                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md hover-bg-main-two-600 hover-text-white"
+                  href="https://github.com/Abdobaki"
+                  target="_blank"
+                  title="GitHub Profile"
+                  ><i class="ph-bold ph-github-logo"></i
                 ></a>
               </li>
               <li>
                 <a
-                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
-                  href="#"
-                  ><i class="ph-bold ph-x-logo"></i
+                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md hover-bg-main-two-600 hover-text-white"
+                  href="https://abdobaki.github.io/my_portofilo/"
+                  target="_blank"
+                  title="Live Portfolio"
+                  ><i class="ph-bold ph-globe"></i
                 ></a>
               </li>
               <li>
                 <a
-                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
-                  href="#"
-                  ><i class="ph-bold ph-instagram-logo"></i
+                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md hover-bg-main-two-600 hover-text-white"
+                  href="mailto:abdelbaki.m.28@gmail.com"
+                  title="Email"
+                  ><i class="ph-bold ph-envelope"></i
                 ></a>
               </li>
               <li>
                 <a
-                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
-                  href="#"
-                  ><i class="ph-bold ph-dribbble-logo"></i
+                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md hover-bg-main-two-600 hover-text-white"
+                  href="tel:+213676865376"
+                  title="Phone"
+                  ><i class="ph-bold ph-phone-call"></i
                 ></a>
               </li>
             </ul>
-          </div>
-          <!-- Menu End  -->
-
-          <!-- Menu Start  -->
-          <div class="header-menu d-none">
-            <!-- Nav menu Start -->
-            <div class="main-menu">
-              <nav class="tw-main-menu-content">
-                <ul>
-                  <li class="p-static has-dropdown">
-                    <a class="color-active" href="index.html">Home</a>
-                    <!-- mega menu start -->
-                    <div class="tw-submenu submenu has-homemenu">
-                      <div
-                        class="row gx-6 row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2"
-                      >
-                        <div class="col homemenu">
-                          <div class="homemenu-thumb tw-mb-4">
-                            <img
-                              src="assets/images/thumbs/home1.jpg"
-                              alt="home-one"
-                            />
-                            <div class="homemenu-btn w-100">
-                              <div class="tw-mb-2">
-                                <a
-                                  class="bg-main-two-600 text-white fw-semibold tw-py-3 tw-text-sm d-inline-block hover-bg-white hover-text-heading menu-btn show-1"
-                                  href="index.html"
-                                >
-                                  Multi Page
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="homemenu-content text-center">
-                            <h4 class="homemenu-title">
-                              <a href="index.html">Ceative Agency</a>
-                            </h4>
-                          </div>
-                        </div>
-                        <div class="col homemenu">
-                          <div class="homemenu-thumb tw-mb-4">
-                            <img
-                              src="assets/images/thumbs/home2.jpg"
-                              alt="home-two"
-                            />
-                            <div class="homemenu-btn w-100">
-                              <div class="tw-mb-2">
-                                <a
-                                  class="bg-main-two-600 text-white fw-semibold tw-py-3 tw-text-sm d-inline-block hover-bg-white hover-text-heading menu-btn show-1"
-                                  href="index-2.html"
-                                >
-                                  Multi Page
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="homemenu-content text-center">
-                            <h4 class="homemenu-title">
-                              <a href="index-2.html">Digital Studio</a>
-                            </h4>
-                          </div>
-                        </div>
-                        <div class="col homemenu">
-                          <div class="homemenu-thumb tw-mb-4">
-                            <img
-                              src="assets/images/thumbs/home3.jpg"
-                              alt="home-three"
-                            />
-                            <div class="homemenu-btn w-100">
-                              <div class="tw-mb-2">
-                                <a
-                                  class="bg-main-two-600 text-white fw-semibold tw-py-3 tw-text-sm d-inline-block hover-bg-white hover-text-heading menu-btn show-1"
-                                  href="index-3.html"
-                                >
-                                  Multi Page
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="homemenu-content text-center">
-                            <h4 class="homemenu-title">
-                              <a href="index-3.html">Personal Portfolio</a>
-                            </h4>
-                          </div>
-                        </div>
-                        <div class="col homemenu">
-                          <div class="homemenu-thumb tw-mb-4">
-                            <img
-                              src="assets/images/thumbs/coming-soon-img.png"
-                              alt="coming-soon"
-                            />
-                          </div>
-                          <div class="homemenu-content text-center">
-                            <h4 class="homemenu-title">
-                              <a href="#">Coming Soon</a>
-                            </h4>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- mega menu end -->
-                  </li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li class="has-dropdown">
-                    <a href="service.html">Services</a>
-                    <ul class="submenu tw-submenu">
-                      <li><a href="service.html">Our Service</a></li>
-                      <li>
-                        <a href="service-details.html">Service Details</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="has-dropdown">
-                    <a href="#">Pages</a>
-                    <ul class="submenu tw-submenu">
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="team.html">Our Team</a></li>
-                      <li><a href="testimonial.html">Testimonials</a></li>
-                      <li><a href="pricing.html">Pricing</a></li>
-                      <li><a href="portfolio-one.html">Portfolio One</a></li>
-                      <li><a href="portfolio-two.html">Portfolio Two</a></li>
-                      <li>
-                        <a href="portfolio-three.html">Portfolio Theee</a>
-                      </li>
-                      <li><a href="portfolio-four.html">Portfolio Four</a></li>
-                      <li>
-                        <a href="portfolio-details.html">Portfolio Details</a>
-                      </li>
-                      <li><a href="faq.html">Our Faq</a></li>
-                      <li><a href="error.html">Error</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-dropdown">
-                    <a href="blog.html">Blog</a>
-                    <ul class="submenu tw-submenu">
-                      <li><a href="blog.html">Blog</a></li>
-                      <li><a href="blog-list.html">Blog List</a></li>
-                      <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-            <!-- Nav menu End  -->
           </div>
           <!-- Menu End  -->
 
@@ -475,7 +358,7 @@
                     class="tw-transition-3"
                     src="assets/images/icons/header-three-toggle.svg"
                     alt="toggle"
-                /></span>
+                 /></span>
               </button>
             </div>
             <!-- Menu Button End  -->
@@ -484,7 +367,8 @@
             <div class="header-three-button d-none d-md-block">
               <a
                 class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-md"
-                href="contact.html"
+                href="abdelbaki_cv.pdf"
+                download="Abdelbaki_Nasri_CV.pdf"
               >
                 download cv
                 <span class="tw-hover-btn-circle-dot bg-main-two-600"></span>
@@ -500,7 +384,7 @@
     <!-- ==================== Header End Here ==================== -->
     <div id="smooth-wrapper">
       <div id="smooth-content">
-        <section class="banner-three-area">
+        <section class="banner-three-area" id="home">
           <div class="container tw-container-1800-px">
             <div class="row">
               <div class="col-xl-12">
@@ -509,8 +393,9 @@
                     class="banner-three-man position-absolute start-50 translate-middle-x"
                   >
                     <img
-                      src="assets/images/shapes/banner-three-man.png"
-                      alt="man"
+                      src="assets/images/thumbs/abdelbaki-hero.png"
+                      alt="Abdelbaki Nasri"
+                      style="max-height: 720px; object-fit: contain;"
                     />
                   </div>
                   <h1 class="banner-three-title text-black tw-mb-30">
@@ -526,9 +411,8 @@
                       data-aos-delay="200"
                     >
                       <h2 class="banner-three-left-title tw-text-3xl tw-mb-6">
-                        Hello! I'm noah <br />
-                        Niko. a digital designer and creative developer from
-                        London.
+                        Hello! I'm Abdelbaki <br />
+                        Nasri. A software developer &amp; systems builder based in Algeria.
                       </h2>
                       <div class="banner-three-list">
                         <ul>
@@ -539,8 +423,8 @@
                               ><img
                                 src="assets/images/icons/banner-three-pluse.svg"
                                 alt="pluse"
-                            /></span>
-                            Web Development
+                             /></span>
+                            Full-Stack Web Development
                           </li>
                           <li
                             class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
@@ -549,8 +433,8 @@
                               ><img
                                 src="assets/images/icons/banner-three-pluse.svg"
                                 alt="pluse"
-                            /></span>
-                            Branding & Identity
+                             /></span>
+                            Desktop POS &amp; Business Systems
                           </li>
                           <li
                             class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
@@ -559,8 +443,8 @@
                               ><img
                                 src="assets/images/icons/banner-three-pluse.svg"
                                 alt="pluse"
-                            /></span>
-                            Creative Strategy
+                             /></span>
+                            Systems &amp; Backend (Go, Docker)
                           </li>
                           <li
                             class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
@@ -569,8 +453,8 @@
                               ><img
                                 src="assets/images/icons/banner-three-pluse.svg"
                                 alt="pluse"
-                            /></span>
-                            UI/UX Design
+                             /></span>
+                            AI &amp; Computer Vision (OpenCV)
                           </li>
                           <li
                             class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"
@@ -579,8 +463,8 @@
                               ><img
                                 src="assets/images/icons/banner-three-pluse.svg"
                                 alt="pluse"
-                            /></span>
-                            Digital Marketing
+                             /></span>
+                            Database Architecture (SQLite, Supabase)
                           </li>
                         </ul>
                       </div>
@@ -592,17 +476,26 @@
                       data-aos-delay="200"
                     >
                       <h3 class="banner-three-center-title tw-text-120">
-                        Design, branding and web development made better.
+                        High-performance software, intuitive POS, and intelligent digital solutions.
                       </h3>
-                      <div class="banner-three-button">
+                      <div class="banner-three-button d-flex flex-wrap justify-content-center tw-gap-3">
                         <a
                           class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-lg"
-                          href="contact.html"
+                          href="#projects"
                         >
                           view projects
                           <span
                             class="tw-hover-btn-circle-dot bg-main-two-600"
                           ></span>
+                        </a>
+                        <a
+                          class="tw-hover-btn bg-main-600 text-heading fw-bold tw-py-4 tw-px-8 d-inline-flex align-items-center tw-gap-2 hover-text-heading hover-bg-white text-uppercase tw-rounded-lg shadow-sm"
+                          href="abdelbaki_cv.pdf"
+                          download="Abdelbaki_Nasri_CV.pdf"
+                          title="Download Resume"
+                        >
+                          <span>download cv</span>
+                          <i class="ph-bold ph-download-simple"></i>
                         </a>
                       </div>
                     </div>
@@ -621,14 +514,14 @@
                           <span
                             class="purecounter font-heading"
                             data-purecounter-duration="2"
-                            data-purecounter-end="98"
+                            data-purecounter-end="10"
                           ></span
-                          >%
+                          >+
                         </h4>
                         <p
                           class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
                         >
-                          Client Satisfaction Rate
+                          Projects Engineered
                         </p>
                       </div>
                       <div
@@ -639,72 +532,34 @@
                         >
                           <span
                             class="purecounter font-heading"
-                            data-purecounter-duration="4"
-                            data-purecounter-end="70"
+                            data-purecounter-duration="3"
+                            data-purecounter-end="99"
                           ></span
-                          >+
+                          >%
                         </h4>
                         <p
                           class="banner-three-counter-paragraph tw-text-lg fw-medium text-white"
                         >
-                          Projects Launched
+                          AI Model Test Accuracy (ASL)
                         </p>
                       </div>
                       <div
                         class="banner-three-counter-item tw-rounded-md tw-mb-4"
                       >
-                        <div class="d-flex align-items-center tw-mb-2">
-                          <div
-                            class="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-1 border border-2 border-white"
-                          >
-                            <img
-                              src="assets/images/thumbs/team-img1.png"
-                              alt="Client Image"
-                              class="w-100 h-100 object-fit-cover"
-                            />
-                          </div>
-                          <div
-                            class="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-2 tw--ms-16-px z-1 border border-2 border-white"
-                          >
-                            <img
-                              src="assets/images/thumbs/team-img2.png"
-                              alt="Client Image"
-                              class="w-100 h-100 object-fit-cover"
-                            />
-                          </div>
-                          <div
-                            class="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-3 tw--ms-16-px z-1 border border-2 border-white"
-                          >
-                            <img
-                              src="assets/images/thumbs/team-img3.png"
-                              alt="Client Image"
-                              class="w-100 h-100 object-fit-cover"
-                            />
-                          </div>
-                          <div
-                            class="tw-w-9 tw-h-9 rounded-circle overflow-hidden tw-duration-300 hover-scale-2 tw-hover-z-9 position-relative z-3 tw--ms-16-px z-1 border border-2 border-white"
-                          >
-                            <img
-                              src="assets/images/thumbs/team-img4.png"
-                              alt="Client Image"
-                              class="w-100 h-100 object-fit-cover"
-                            />
-                          </div>
-                        </div>
                         <h4
                           class="banner-three-counter-title tw-text-101 fw-semibold font-heading text-heading tw-mb-2 lh-1"
                         >
                           <span
                             class="purecounter font-heading"
-                            data-purecounter-duration="3"
-                            data-purecounter-end="96"
+                            data-purecounter-duration="2"
+                            data-purecounter-end="100"
                           ></span
-                          >+
+                          >%
                         </h4>
                         <p
                           class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
                         >
-                          Global Clients and Growing
+                          Code Reliability &amp; Quality
                         </p>
                       </div>
                     </div>
@@ -714,7 +569,7 @@
                       <img
                         src="assets/images/shapes/banner-three-shape.png"
                         alt="shape"
-                      />
+                       />
                       <div class="banner-three-carcel-shape">
                         <div><span></span></div>
                       </div>
@@ -725,7 +580,7 @@
             </div>
           </div>
         </section>
-        <section class="about-three-area py-120 position-relative z-1">
+        <section class="about-three-area py-120 position-relative z-1" id="about">
           <div class="container tw-container-1800-px">
             <div class="about-three-top position-relative z-1">
               <div class="row justify-content-center tw-mb-21">
@@ -734,18 +589,15 @@
                     <h2
                       class="about-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim"
                     >
-                      I am dedicated to bringing your vision to life by crafting
-                      unique, highly aesthetic, and impactful digital
-                      experiences. My work speaks louder than words—explore the
-                      results.
+                      I build practical, robust, and scalable software solutions designed to solve real business challenges, streamline operations, and deliver tangible impact.
                     </h2>
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="row align-items-center">
                 <div class="col-xl-6">
                   <div
-                    class="about-three-thumb w-100 tw-clip-anim tw-rounded-lg"
+                    class="about-three-thumb w-100 tw-clip-anim tw-rounded-lg shadow-sm"
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-delay="200"
@@ -753,8 +605,8 @@
                     <img
                       class="tw-anim-img w-100 tw-rounded-lg"
                       data-animate="true"
-                      src="assets/images/thumbs/about-three-thumb.jpg"
-                      alt="thumb"
+                      src="assets/images/thumbs/abdelbaki-about.jpg"
+                      alt="Abdelbaki Nasri coding at laptop"
                     />
                   </div>
                 </div>
@@ -767,43 +619,31 @@
                   >
                     <div>
                       <p class="tw-text-xl tw-mb-10">
-                        I’m a passionate digital designer and web developer
-                        focused on creating modern, user-centered digital
-                        experiences. I blend creativity with clean, efficient
-                        code to build websites that are not only visually
-                        appealing but also functional, fast, and scalable.
+                        I am a Computer Science student at the University of M'sila (2023–2026) with deep hands-on expertise building cross-platform applications across web, desktop, and systems.
                       </p>
                       <p class="tw-text-xl tw-mb-10">
-                        With a strong eye for design & a solid technical
-                        foundation, I transform complex ideas into simple
-                        intuitive digital solutions. I believe great design is
-                        purposeful-every layout, interaction, and line of code
-                        is crafted to enhance usability and deliver real value.
+                        My technical stack is centered around modern engineering tools: <strong>React, Next.js, TypeScript, Go, Electron, Docker, and SQLite</strong>. I also bring strong domain knowledge in retail operations and business software workflows, gained through hands-on store management.
                       </p>
                       <p class="tw-text-xl tw-mb-10">
-                        From concept to launch, I work closely with clients to
-                        understand their goals, audience and brand vision. my
-                        collaborative approach ensures and project reflects the
-                        client’s identity while business objectives and
-                        performance standards.
+                        Whether engineering real-time offline-first desktop POS systems with barcode scanning &amp; receipt generation, automated backend workflows with n8n and Go, or computer vision recognition pipelines, I bridge architectural rigor with smooth user experiences.
                       </p>
                     </div>
                     <div class="about-three-counter d-inline-block">
                       <div class="tw-hover-btn-wrapper d-inline-block">
                         <a
                           class="tw-btn-circle tw-hover-btn-item tw-hover-btn tw-w-160-px tw-h-160-px lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden border border-1 border-neutral-200"
-                          href="about.html"
+                          href="#contact"
                         >
                           <span
                             class="d-flex flex-column justify-content-center"
                           >
                             <span
                               class="tw-btn-circle-icon text-heading tw-text-8 tw-transition-3 font-heading fw-medium"
-                              >15+</span
+                              >2026</span
                             >
                             <span
                               class="text-heading fw-bold text-center tw-transition-3 tw-text-2xl fw-medium"
-                              >Years of Experience</span
+                              >CS Degree</span
                             >
                           </span>
                           <i class="tw-btn-circle-dot bg-main-two-600"></i>
@@ -827,15 +667,15 @@
                   >
                     <span
                       class="purecounter font-heading"
-                      data-purecounter-duration="4"
-                      data-purecounter-end="478"
+                      data-purecounter-duration="2"
+                      data-purecounter-end="6"
                     ></span
-                    >/5
+                    >+
                   </h2>
                   <p
                     class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
                   >
-                    Client Satisfaction Rate
+                    Production-Ready Core Projects
                   </p>
                 </div>
                 <div
@@ -850,14 +690,14 @@
                     <span
                       class="purecounter font-heading"
                       data-purecounter-duration="2"
-                      data-purecounter-end="115"
+                      data-purecounter-end="99"
                     ></span
-                    >k+
+                    >%
                   </h2>
                   <p
                     class="banner-three-counter-paragraph tw-text-lg fw-medium text-heading"
                   >
-                    In Client revenue growth
+                    AI Landmark Recognition Accuracy
                   </p>
                 </div>
               </div>
@@ -868,7 +708,7 @@
               class="about-three-shape position-absolute start-0 w-100"
               src="assets/images/shapes/about-three-shape.png"
               alt="shape"
-            />
+             />
           </div>
         </section>
         <!-- ======================== Marquee section start =========================== -->
@@ -877,48 +717,49 @@
             class="marquee_left d-flex align-items-center justify-content-between tw-gap-16 overflow-hidden"
           >
             <div>
-              <h2
-                class="marquee-two-title marquee-three-title text-uppercase text-white"
-              >
-                Services <span class="text-white">-</span>
+              <h2 class="marquee-two-title marquee-three-title text-uppercase text-white">
+                REACT &amp; NEXT.JS <span class="text-white">-</span>
               </h2>
             </div>
             <div>
-              <h2
-                class="marquee-two-title marquee-three-title text-uppercase text-stroke"
-              >
-                Services <span class="text-white">-</span>
+              <h2 class="marquee-two-title marquee-three-title text-uppercase text-stroke">
+                TYPESCRIPT <span class="text-white">-</span>
               </h2>
             </div>
             <div>
-              <h2
-                class="marquee-two-title marquee-three-title text-uppercase text-white"
-              >
-                Services <span class="text-white">-</span>
+              <h2 class="marquee-two-title marquee-three-title text-uppercase text-white">
+                GO / GOLANG <span class="text-white">-</span>
               </h2>
             </div>
             <div>
-              <h2
-                class="marquee-two-title marquee-three-title text-uppercase text-stroke"
-              >
-                Services <span class="text-white">-</span>
+              <h2 class="marquee-two-title marquee-three-title text-uppercase text-stroke">
+                ELECTRON &amp; SQLITE <span class="text-white">-</span>
               </h2>
             </div>
             <div>
-              <h2
-                class="marquee-two-title marquee-three-title text-uppercase text-white"
-              >
-                Services <span class="text-white">-</span>
+              <h2 class="marquee-two-title marquee-three-title text-uppercase text-white">
+                DOCKER &amp; SUPABASE <span class="text-white">-</span>
+              </h2>
+            </div>
+            <div>
+              <h2 class="marquee-two-title marquee-three-title text-uppercase text-stroke">
+                PYTHON &amp; OPENCV <span class="text-white">-</span>
+              </h2>
+            </div>
+            <div>
+              <h2 class="marquee-two-title marquee-three-title text-uppercase text-white">
+                N8N AUTOMATION <span class="text-white">-</span>
               </h2>
             </div>
           </div>
         </div>
         <!-- ======================== Marquee section end =========================== -->
-        <section class="service-three-area bg-black pt-120 tw-pb-15">
+        <section class="service-three-area bg-black pt-120 tw-pb-15" id="services">
           <div class="container tw-container-1800-px">
             <div class="row">
               <div class="col-12">
                 <div class="service-three-wrapper">
+                  <!-- Service 1 -->
                   <div
                     class="service-three-single"
                     data-aos="fade-right"
@@ -937,15 +778,15 @@
                               class="tw-transition-3"
                               src="assets/images/icons/service-three-arrow.svg"
                               alt="arrow"
-                          /></span>
+                           /></span>
                         </div>
                         <div>
                           <div>
                             <h2
                               class="service-three-title tw-text-15 text-white tw-mb-4"
                             >
-                              <a href="service-details.html"
-                                >Illustration Design</a
+                              <a href="#projects"
+                                >Full-Stack Web Engineering</a
                               >
                             </h2>
                           </div>
@@ -954,22 +795,22 @@
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Creative Direction</a
+                                  href="#projects"
+                                  >React &amp; Next.js</a
                                 >
                               </li>
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Brand Identity</a
+                                  href="#projects"
+                                  >TypeScript</a
                                 >
                               </li>
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Graphic Design</a
+                                  href="#projects"
+                                  >Tailwind CSS &amp; REST APIs</a
                                 >
                               </li>
                             </ul>
@@ -977,14 +818,16 @@
                         </div>
                       </div>
                       <div class="service-three-thumb">
-                        <a href="service-details.html"
+                        <a href="#projects"
                           ><img
-                            src="assets/images/thumbs/service-three-thumb1.png"
-                            alt="thumb1"
-                        /></a>
+                            src="assets/images/thumbs/proj-skillbridge.jpg"
+                            alt="SkillBridge Web Platform"
+                            style="width: 280px; height: 160px; object-fit: cover; border-radius: 8px;"
+                         /></a>
                       </div>
                     </div>
                   </div>
+                  <!-- Service 2 -->
                   <div
                     class="service-three-single ms-auto"
                     data-aos="fade-left"
@@ -1003,15 +846,15 @@
                               class="tw-transition-3"
                               src="assets/images/icons/service-three-arrow.svg"
                               alt="arrow"
-                          /></span>
+                           /></span>
                         </div>
                         <div>
                           <div>
                             <h2
                               class="service-three-title tw-text-15 text-white tw-mb-4"
                             >
-                              <a href="service-details.html"
-                                >Business Branding</a
+                              <a href="#projects"
+                                >Desktop &amp; Retail POS Systems</a
                               >
                             </h2>
                           </div>
@@ -1020,22 +863,22 @@
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Creative Direction</a
+                                  href="#projects"
+                                  >Electron &amp; Vite</a
                                 >
                               </li>
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Brand Identity</a
+                                  href="#projects"
+                                  >SQLite Local DB</a
                                 >
                               </li>
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Graphic Design</a
+                                  href="#projects"
+                                  >Barcode &amp; Receipt Hardware</a
                                 >
                               </li>
                             </ul>
@@ -1043,14 +886,16 @@
                         </div>
                       </div>
                       <div class="service-three-thumb">
-                        <a href="service-details.html"
+                        <a href="#projects"
                           ><img
-                            src="assets/images/thumbs/service-three-thumb2.png"
-                            alt="thumb1"
-                        /></a>
+                            src="assets/images/thumbs/proj-pos-clothing.jpg"
+                            alt="Clothing POS System"
+                            style="width: 280px; height: 160px; object-fit: cover; border-radius: 8px;"
+                         /></a>
                       </div>
                     </div>
                   </div>
+                  <!-- Service 3 -->
                   <div
                     class="service-three-single"
                     data-aos="fade-right"
@@ -1069,14 +914,14 @@
                               class="tw-transition-3"
                               src="assets/images/icons/service-three-arrow.svg"
                               alt="arrow"
-                          /></span>
+                           /></span>
                         </div>
                         <div>
                           <div>
                             <h2
                               class="service-three-title tw-text-15 text-white tw-mb-4"
                             >
-                              <a href="service-details.html">Web Development</a>
+                              <a href="#projects">Backend &amp; Systems Engineering</a>
                             </h2>
                           </div>
                           <div class="portfolio-list portfolio-two-list">
@@ -1084,22 +929,22 @@
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Creative Direction</a
+                                  href="#projects"
+                                  >Go (Golang)</a
                                 >
                               </li>
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Brand Identity</a
+                                  href="#projects"
+                                  >Docker Containers</a
                                 >
                               </li>
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Graphic Design</a
+                                  href="#projects"
+                                  >n8n Workflow Automation</a
                                 >
                               </li>
                             </ul>
@@ -1107,14 +952,16 @@
                         </div>
                       </div>
                       <div class="service-three-thumb">
-                        <a href="service-details.html"
+                        <a href="#projects"
                           ><img
-                            src="assets/images/thumbs/service-three-thumb3.png"
-                            alt="thumb1"
-                        /></a>
+                            src="assets/images/thumbs/proj-haios.jpg"
+                            alt="HAIOS Operating System"
+                            style="width: 280px; height: 160px; object-fit: cover; border-radius: 8px;"
+                         /></a>
                       </div>
                     </div>
                   </div>
+                  <!-- Service 4 -->
                   <div
                     class="service-three-single ms-auto"
                     data-aos="fade-left"
@@ -1133,15 +980,15 @@
                               class="tw-transition-3"
                               src="assets/images/icons/service-three-arrow.svg"
                               alt="arrow"
-                          /></span>
+                           /></span>
                         </div>
                         <div>
                           <div>
                             <h2
                               class="service-three-title tw-text-15 text-white tw-mb-4"
                             >
-                              <a href="service-details.html"
-                                >Application Design</a
+                              <a href="#projects"
+                                >AI &amp; Computer Vision</a
                               >
                             </h2>
                           </div>
@@ -1150,22 +997,22 @@
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Creative Direction</a
+                                  href="#projects"
+                                  >Python &amp; OpenCV</a
                                 >
                               </li>
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Brand Identity</a
+                                  href="#projects"
+                                  >MediaPipe 3D Landmarks</a
                                 >
                               </li>
                               <li>
                                 <a
                                   class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3"
-                                  href="#"
-                                  >Graphic Design</a
+                                  href="#projects"
+                                  >Random Forest (98.9% Acc)</a
                                 >
                               </li>
                             </ul>
@@ -1173,11 +1020,12 @@
                         </div>
                       </div>
                       <div class="service-three-thumb">
-                        <a href="service-details.html"
+                        <a href="#projects"
                           ><img
-                            src="assets/images/thumbs/service-three-thumb4.png"
-                            alt="thumb1"
-                        /></a>
+                            src="assets/images/thumbs/proj-sign-language-ai.jpg"
+                            alt="Sign Language AI"
+                            style="width: 280px; height: 160px; object-fit: cover; border-radius: 8px;"
+                         /></a>
                       </div>
                     </div>
                   </div>
@@ -1186,7 +1034,7 @@
             </div>
           </div>
         </section>
-        <section class="portfolio-three-area py-120 position-relative z-1">
+        <section class="portfolio-three-area py-120 position-relative z-1" id="projects">
           <div class="portfolio-three-shape position-absolute top-0 z-n1">
             <h3 class="portfolio-three-shape-title">works</h3>
           </div>
@@ -1196,36 +1044,45 @@
                 <div
                   class="portfolio-three-wrapper d-flex justify-content-between flex-wrap align-items-start position-relative z-1"
                 >
+                  <!-- Project 1: Clothing Store POS System -->
                   <div
                     class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
                   >
                     <div
                       class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
                     >
-                      <div class="tw-mb-6">
+                      <div class="tw-mb-6" style="max-width: 85%;">
                         <div>
-                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                          <h2 class="tw-text-605 fw-medium tw-mb-2">
                             <a
                               class="hover-text-main-two-600"
-                              href="portfolio-details.html"
-                              >Epic Strategy App</a
+                              href="https://github.com/Abdobaki/Sales-desktop-app-POS-"
+                              target="_blank"
+                              >Clothing Store POS System</a
                             >
                           </h2>
                         </div>
+                        <p class="text-secondary tw-mb-3" style="font-size: 0.95rem; line-height: 1.55;">
+                          Full-featured desktop point-of-sale system for clothing retail. Covers real-time barcode scanning, inventory &amp; stock management, multi-tier pricing, cash register checkout, and receipt printing with offline-first SQLite persistence.
+                        </p>
                         <div class="portfolio-three-list portfolio-list">
-                          <ul class="d-flex tw-gap-205 flex-wrap">
+                          <ul class="d-flex tw-gap-2 flex-wrap">
                             <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >BRANDING</a
+                              <span
+                                class="text-uppercase text-heading fw-medium position-relative z-1 badge bg-light text-dark px-3 py-2 border"
+                                >ELECTRON</span
                               >
                             </li>
                             <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >web DESIGN</a
+                              <span
+                                class="text-uppercase text-heading fw-medium position-relative z-1 badge bg-light text-dark px-3 py-2 border"
+                                >REACT &amp; TS</span
+                              >
+                            </li>
+                            <li>
+                              <span
+                                class="text-uppercase text-heading fw-medium position-relative z-1 badge bg-light text-dark px-3 py-2 border"
+                                >SQLITE</span
                               >
                             </li>
                           </ul>
@@ -1235,56 +1092,65 @@
                         <div class="portfolio-three-button">
                           <a
                             class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
-                            href="portfolio-details.html"
+                            href="https://github.com/Abdobaki/Sales-desktop-app-POS-"
+                            target="_blank"
+                            title="View on GitHub"
                             ><i class="ph ph-arrow-up-right"></i
                           ></a>
                         </div>
                       </div>
                     </div>
                     <div
-                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg shadow-sm"
                       data-cursor="View"
                     >
                       <a
                         class="d-block cursor-hide tw-rounded-lg"
-                        href="portfolio-details.html"
-                        ><img
-                          class="w-100 tw-rounded-lg"
-                          src="assets/images/thumbs/portfolio-three-thumb1.jpg"
-                          alt="thumb"
-                      /></a>
+                        href="https://github.com/Abdobaki/Sales-desktop-app-POS-"
+                        target="_blank"
+                        ><img class="w-100 tw-rounded-lg" src="assets/images/thumbs/proj-pos-clothing.jpg" alt="Modern Clothing Store POS &amp; Sales Desktop Application" /></a>
                     </div>
                   </div>
+
+                  <!-- Project 2: SkillBridge Platform -->
                   <div
                     class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
                   >
                     <div
                       class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
                     >
-                      <div class="tw-mb-6">
+                      <div class="tw-mb-6" style="max-width: 85%;">
                         <div>
-                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                          <h2 class="tw-text-605 fw-medium tw-mb-2">
                             <a
                               class="hover-text-main-two-600"
-                              href="portfolio-details.html"
-                              >Branding Identity</a
+                              href="https://github.com/Abdobaki/SkillBridge"
+                              target="_blank"
+                              >SkillBridge – Academic &amp; Career Platform</a
                             >
                           </h2>
                         </div>
+                        <p class="text-secondary tw-mb-3" style="font-size: 0.95rem; line-height: 1.55;">
+                          Academic collaboration platform empowering students to discover study partners, access curated academic resources, showcase projects, and accelerate technical career development with real-time Supabase cloud sync.
+                        </p>
                         <div class="portfolio-three-list portfolio-list">
-                          <ul class="d-flex tw-gap-205 flex-wrap">
+                          <ul class="d-flex tw-gap-2 flex-wrap">
                             <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >BRANDING</a
+                              <span
+                                class="text-uppercase text-heading fw-medium position-relative z-1 badge bg-light text-dark px-3 py-2 border"
+                                >REACT &amp; TS</span
                               >
                             </li>
                             <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >web DESIGN</a
+                              <span
+                                class="text-uppercase text-heading fw-medium position-relative z-1 badge bg-light text-dark px-3 py-2 border"
+                                >TAILWIND CSS</span
+                              >
+                            </li>
+                            <li>
+                              <span
+                                class="text-uppercase text-heading fw-medium position-relative z-1 badge bg-light text-dark px-3 py-2 border"
+                                >SUPABASE</span
                               >
                             </li>
                           </ul>
@@ -1293,55 +1159,64 @@
                       <div class="portfolio-three-button">
                         <a
                           class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
-                          href="portfolio-details.html"
+                          href="https://github.com/Abdobaki/SkillBridge"
+                          target="_blank"
+                          title="View on GitHub"
                           ><i class="ph ph-arrow-up-right"></i
                         ></a>
                       </div>
                     </div>
                     <div
-                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg shadow-sm"
                       data-cursor="View"
                     >
                       <a
                         class="d-block cursor-hide tw-rounded-lg"
-                        href="portfolio-details.html"
-                        ><img
-                          class="w-100 tw-rounded-lg"
-                          src="assets/images/thumbs/portfolio-three-thumb2.jpg"
-                          alt="thumb"
-                      /></a>
+                        href="https://github.com/Abdobaki/SkillBridge"
+                        target="_blank"
+                        ><img class="w-100 tw-rounded-lg" src="assets/images/thumbs/proj-skillbridge.jpg" alt="SkillBridge Academic &amp; Career Platform" /></a>
                     </div>
                   </div>
+
+                  <!-- Project 3: HAIOS Agency OS -->
                   <div
                     class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
                   >
                     <div
                       class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
                     >
-                      <div class="tw-mb-6">
+                      <div class="tw-mb-6" style="max-width: 85%;">
                         <div>
-                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                          <h2 class="tw-text-605 fw-medium tw-mb-2">
                             <a
                               class="hover-text-main-two-600"
-                              href="portfolio-details.html"
-                              >PixelCraft Mobile UI</a
+                              href="https://github.com/Abdobaki"
+                              target="_blank"
+                              >HAIOS – Agency Management &amp; Automation</a
                             >
                           </h2>
                         </div>
+                        <p class="text-secondary tw-mb-3" style="font-size: 0.95rem; line-height: 1.55;">
+                          Centralized software ecosystem for agency operations. Unifies client onboarding, service delivery boards, automated billing pipelines, and multi-step webhook workflows orchestrated with Go microservices, Node.js, and n8n.
+                        </p>
                         <div class="portfolio-three-list portfolio-list">
-                          <ul class="d-flex tw-gap-205 flex-wrap">
+                          <ul class="d-flex tw-gap-2 flex-wrap">
                             <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >BRANDING</a
+                              <span
+                                class="text-uppercase text-heading fw-medium position-relative z-1 badge bg-light text-dark px-3 py-2 border"
+                                >GO (GOLANG)</span
                               >
                             </li>
                             <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >web DESIGN</a
+                              <span
+                                class="text-uppercase text-heading fw-medium position-relative z-1 badge bg-light text-dark px-3 py-2 border"
+                                >NODE.JS &amp; REACT</span
+                              >
+                            </li>
+                            <li>
+                              <span
+                                class="text-uppercase text-heading fw-medium position-relative z-1 badge bg-light text-dark px-3 py-2 border"
+                                >N8N AUTOMATION</span
                               >
                             </li>
                           </ul>
@@ -1350,55 +1225,64 @@
                       <div class="portfolio-three-button">
                         <a
                           class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
-                          href="portfolio-details.html"
+                          href="https://github.com/Abdobaki"
+                          target="_blank"
+                          title="View on GitHub"
                           ><i class="ph ph-arrow-up-right"></i
                         ></a>
                       </div>
                     </div>
                     <div
-                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg shadow-sm"
                       data-cursor="View"
                     >
                       <a
                         class="d-block cursor-hide tw-rounded-lg"
-                        href="portfolio-details.html"
-                        ><img
-                          class="w-100 tw-rounded-lg"
-                          src="assets/images/thumbs/portfolio-three-thumb3.jpg"
-                          alt="thumb"
-                      /></a>
+                        href="https://github.com/Abdobaki"
+                        target="_blank"
+                        ><img class="w-100 tw-rounded-lg" src="assets/images/thumbs/proj-haios.jpg" alt="HAIOS Agency Management &amp; Automation Platform" /></a>
                     </div>
                   </div>
+
+                  <!-- Project 4: Gym Management & POS -->
                   <div
                     class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
                   >
                     <div
                       class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
                     >
-                      <div class="tw-mb-6">
+                      <div class="tw-mb-6" style="max-width: 85%;">
                         <div>
-                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                          <h2 class="tw-text-605 fw-medium tw-mb-2">
                             <a
                               class="hover-text-main-two-600"
-                              href="portfolio-details.html"
-                              >Creative Studio</a
+                              href="https://github.com/Abdobaki/gymapp"
+                              target="_blank"
+                              >Gym Management &amp; POS System</a
                             >
                           </h2>
                         </div>
+                        <p class="text-secondary tw-mb-3" style="font-size: 0.95rem; line-height: 1.55;">
+                          Cross-platform desktop application for fitness clubs. Streamlines member registrations, subscription renewals, automated digital pass generation, front-desk check-ins, supplement store sales, and instant receipt generation.
+                        </p>
                         <div class="portfolio-three-list portfolio-list">
-                          <ul class="d-flex tw-gap-205 flex-wrap">
+                          <ul class="d-flex tw-gap-2 flex-wrap">
                             <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >BRANDING</a
+                              <span
+                                class="text-uppercase text-heading fw-medium position-relative z-1 badge bg-light text-dark px-3 py-2 border"
+                                >ELECTRON</span
                               >
                             </li>
                             <li>
-                              <a
-                                class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3"
-                                href="#"
-                                >web DESIGN</a
+                              <span
+                                class="text-uppercase text-heading fw-medium position-relative z-1 badge bg-light text-dark px-3 py-2 border"
+                                >REACT &amp; VITE</span
+                              >
+                            </li>
+                            <li>
+                              <span
+                                class="text-uppercase text-heading fw-medium position-relative z-1 badge bg-light text-dark px-3 py-2 border"
+                                >SQLITE</span
                               >
                             </li>
                           </ul>
@@ -1407,38 +1291,171 @@
                       <div class="portfolio-three-button">
                         <a
                           class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
-                          href="portfolio-details.html"
+                          href="https://github.com/Abdobaki/gymapp"
+                          target="_blank"
+                          title="View on GitHub"
                           ><i class="ph ph-arrow-up-right"></i
                         ></a>
                       </div>
                     </div>
                     <div
-                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg"
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg shadow-sm"
                       data-cursor="View"
                     >
                       <a
                         class="d-block cursor-hide tw-rounded-lg"
-                        href="portfolio-details.html"
-                        ><img
-                          class="w-100 tw-rounded-lg"
-                          src="assets/images/thumbs/portfolio-three-thumb4.jpg"
-                          alt="thumb"
-                      /></a>
+                        href="https://github.com/Abdobaki/gymapp"
+                        target="_blank"
+                        ><img class="w-100 tw-rounded-lg" src="assets/images/thumbs/proj-gym-pos.jpg" alt="Gym Management &amp; POS Desktop Application" /></a>
                     </div>
                   </div>
+
+                  <!-- Project 5: Digital Restaurant E-Menu -->
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6" style="max-width: 85%;">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-2">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="https://github.com/Abdobaki/CuisineDZ"
+                              target="_blank"
+                              >Digital Restaurant E-Menu (CuisineDZ)</a
+                            >
+                          </h2>
+                        </div>
+                        <p class="text-secondary tw-mb-3" style="font-size: 0.95rem; line-height: 1.55;">
+                          Mobile-first QR digital menu web application for dining venues. Features dynamic categorization, live menu search, daily specials highlighting, dietary allergen badges, and intuitive table-side browsing designed for smartphones.
+                        </p>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-2 flex-wrap">
+                            <li>
+                              <span
+                                class="text-uppercase text-heading fw-medium position-relative z-1 badge bg-light text-dark px-3 py-2 border"
+                                >REACT</span
+                              >
+                            </li>
+                            <li>
+                              <span
+                                class="text-uppercase text-heading fw-medium position-relative z-1 badge bg-light text-dark px-3 py-2 border"
+                                >TYPESCRIPT</span
+                              >
+                            </li>
+                            <li>
+                              <span
+                                class="text-uppercase text-heading fw-medium position-relative z-1 badge bg-light text-dark px-3 py-2 border"
+                                >TAILWIND CSS</span
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <a
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                          href="https://github.com/Abdobaki/CuisineDZ"
+                          target="_blank"
+                          title="View on GitHub"
+                          ><i class="ph ph-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg shadow-sm"
+                      data-cursor="View"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="https://github.com/Abdobaki/CuisineDZ"
+                        target="_blank"
+                        ><img class="w-100 tw-rounded-lg" src="assets/images/thumbs/proj-restaurant-menu.jpg" alt="Digital Restaurant E-Menu Web Application" /></a>
+                    </div>
+                  </div>
+
+                  <!-- Project 6: Sign Language AI -->
+                  <div
+                    class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper"
+                  >
+                    <div
+                      class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2"
+                    >
+                      <div class="tw-mb-6" style="max-width: 85%;">
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-2">
+                            <a
+                              class="hover-text-main-two-600"
+                              href="https://github.com/Abdobaki/sing-language-AI-"
+                              target="_blank"
+                              >Sign Language AI – Real-Time Vision</a
+                            >
+                          </h2>
+                        </div>
+                        <p class="text-secondary tw-mb-3" style="font-size: 0.95rem; line-height: 1.55;">
+                          Real-time American Sign Language recognition using computer vision. Extracts 21 3D hand landmarks via MediaPipe, normalizes features relative to the wrist for scale and position invariance, and achieves 98.9% accuracy with Random Forest ML.
+                        </p>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-2 flex-wrap">
+                            <li>
+                              <span
+                                class="text-uppercase text-heading fw-medium position-relative z-1 badge bg-light text-dark px-3 py-2 border"
+                                >PYTHON &amp; OPENCV</span
+                              >
+                            </li>
+                            <li>
+                              <span
+                                class="text-uppercase text-heading fw-medium position-relative z-1 badge bg-light text-dark px-3 py-2 border"
+                                >MEDIAPIPE 3D</span
+                              >
+                            </li>
+                            <li>
+                              <span
+                                class="text-uppercase text-heading fw-medium position-relative z-1 badge bg-light text-dark px-3 py-2 border"
+                                >RANDOM FOREST</span
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="portfolio-three-button">
+                        <a
+                          class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                          href="https://github.com/Abdobaki/sing-language-AI-"
+                          target="_blank"
+                          title="View on GitHub"
+                          ><i class="ph ph-arrow-up-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div
+                      class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg shadow-sm"
+                      data-cursor="View"
+                    >
+                      <a
+                        class="d-block cursor-hide tw-rounded-lg"
+                        href="https://github.com/Abdobaki/sing-language-AI-"
+                        target="_blank"
+                        ><img class="w-100 tw-rounded-lg" src="assets/images/thumbs/proj-sign-language-ai.jpg" alt="Sign Language AI Computer Vision System" /></a>
+                    </div>
+                  </div>
+
                   <div
                     class="about-three-counter portfolio-three-counter d-inline-block position-absolute bottom-0 start-0"
                   >
                     <div class="tw-hover-btn-wrapper d-inline-block">
                       <a
                         class="tw-btn-circle tw-hover-btn-item tw-hover-btn tw-w-160-px tw-h-160-px lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden"
-                        href="about.html"
+                        href="https://github.com/Abdobaki"
+                        target="_blank"
                       >
                         <span class="d-flex flex-column justify-content-center">
                           <span
                             class="text-heading fw-bold tw-transition-3 tw-text-2xl fw-semibold"
-                            >Discover <br />
-                            Our Projects <i class="ph ph-arrow-up-right"></i
+                            >Explore <br />
+                            GitHub <i class="ph ph-arrow-up-right"></i
                           ></span>
                         </span>
                         <i class="tw-btn-circle-dot bg-main-two-600"></i>
@@ -1455,6 +1472,7 @@
             <div class="row">
               <div class="col-xl-12">
                 <div class="feature-three-wrapper hover__widget">
+                  <!-- Item 01 -->
                   <div
                     class="feature-three-single current hover__reveal-item"
                     data-aos="fade-up"
@@ -1474,28 +1492,29 @@
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >Awwwards</span
+                            >Education</span
                           >
                         </div>
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Site Of The Day - Luxe Beauty</span
+                            >Bachelor in Computer Science (2023 - 2026) - University of M'sila</span
                           >
                         </div>
                       </div>
                       <div>
                         <span
                           class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >2023</span
+                          >2023-2026</span
                         >
                       </div>
                     </div>
                     <div
                       class="hover__reveal-bg bg-img"
-                      data-background-image="assets/images/thumbs/feature-three-thumb1.jpg"
+                      data-background-image="assets/images/thumbs/abdelbaki-about.jpg"
                     ></div>
                   </div>
+                  <!-- Item 02 -->
                   <div
                     class="feature-three-single hover__reveal-item"
                     data-aos="fade-up"
@@ -1515,28 +1534,29 @@
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >FWA</span
+                            >Retail Domain</span
                           >
                         </div>
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Motion Design and Animation</span
+                            >Retail Operations &amp; Inventory Management Experience</span
                           >
                         </div>
                       </div>
                       <div>
                         <span
                           class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >2022</span
+                          >Operations</span
                         >
                       </div>
                     </div>
                     <div
                       class="hover__reveal-bg bg-img"
-                      data-background-image="assets/images/thumbs/portfolio-two-thumb1.jpg"
+                      data-background-image="assets/images/thumbs/proj-pos-clothing.jpg"
                     ></div>
                   </div>
+                  <!-- Item 03 -->
                   <div
                     class="feature-three-single hover__reveal-item"
                     data-aos="fade-up"
@@ -1556,28 +1576,29 @@
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >CSSDA</span
+                            >AI Vision</span
                           >
                         </div>
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Motion Design and Animation</span
+                            >98.9% Test Accuracy on 24 ASL Signs (MediaPipe &amp; OpenCV)</span
                           >
                         </div>
                       </div>
                       <div>
                         <span
                           class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >2021</span
+                          >ML Model</span
                         >
                       </div>
                     </div>
                     <div
                       class="hover__reveal-bg bg-img"
-                      data-background-image="assets/images/thumbs/portfolio-two-thumb2.jpg"
+                      data-background-image="assets/images/thumbs/proj-sign-language-ai.jpg"
                     ></div>
                   </div>
+                  <!-- Item 04 -->
                   <div
                     class="feature-three-single hover__reveal-item"
                     data-aos="fade-up"
@@ -1597,28 +1618,29 @@
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >CSSDA</span
+                            >Desktop Apps</span
                           >
                         </div>
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Motion Design and Animation</span
+                            >High-Performance Offline-First POS Systems with SQLite &amp; Electron</span
                           >
                         </div>
                       </div>
                       <div>
                         <span
                           class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >2020</span
+                          >Cross-Platform</span
                         >
                       </div>
                     </div>
                     <div
                       class="hover__reveal-bg bg-img"
-                      data-background-image="assets/images/thumbs/portfolio-two-thumb3.jpg"
+                      data-background-image="assets/images/thumbs/proj-gym-pos.jpg"
                     ></div>
                   </div>
+                  <!-- Item 05 -->
                   <div
                     class="feature-three-single hover__reveal-item"
                     data-aos="fade-up"
@@ -1638,67 +1660,26 @@
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >Awwwards</span
+                            >Automation</span
                           >
                         </div>
                         <div>
                           <span
                             class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Motion Design and Animation</span
+                            >HAIOS Agency Management &amp; n8n Webhook Pipeline Automation</span
                           >
                         </div>
                       </div>
                       <div>
                         <span
                           class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >2019</span
+                          >Systems</span
                         >
                       </div>
                     </div>
                     <div
                       class="hover__reveal-bg bg-img"
-                      data-background-image="assets/images/thumbs/portfolio-two-thumb4.jpg"
-                    ></div>
-                  </div>
-                  <div
-                    class="feature-three-single hover__reveal-item"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                  >
-                    <div
-                      class="feature-three-item d-flex justify-content-between align-items-center"
-                    >
-                      <div class="feature-three-left d-flex align-items-center">
-                        <div>
-                          <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-20"
-                            >06</span
-                          >
-                        </div>
-                        <div>
-                          <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block tw-w-160-px"
-                            >Awwwards</span
-                          >
-                        </div>
-                        <div>
-                          <span
-                            class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                            >Motion Design and Animation</span
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <span
-                          class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block"
-                          >2018</span
-                        >
-                      </div>
-                    </div>
-                    <div
-                      class="hover__reveal-bg bg-img"
-                      data-background-image="assets/images/thumbs/portfolio-thumb1.jpg"
+                      data-background-image="assets/images/thumbs/proj-haios.jpg"
                     ></div>
                   </div>
                 </div>
@@ -1714,9 +1695,7 @@
                   <h2
                     class="testimonial-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim"
                   >
-                    Honest testimonials from clients highlighting my commitment
-                    to quality, performance, & user-focused design that delivers
-                    real results
+                    Client &amp; collaborator feedback highlighting architectural reliability, performance, and user-centric problem solving.
                   </h2>
                 </div>
               </div>
@@ -1738,22 +1717,9 @@
                         >
                           <img
                             class="w-100 h-100 tw-rounded-lg"
-                            src="assets/images/thumbs/testimonial-three-thumb1.jpg"
-                            alt="thumb"
-                          />
-                          <div
-                            class="testimonial-three-button position-absolute start-50 top-50 translate-middle"
-                          >
-                            <a
-                              class="open-popup testimonial-three-btn tw-w-220 tw-h-220 lh-1 d-inline-flex align-items-center justify-content-center bg-white text-main-two-600 tw-text-2xl position-relative z-1 hover-text-main-two-600 rounded-circle"
-                              href="https://www.youtube.com/watch?v=Fvae8nxzVz4"
-                              data-fancybox="gallery"
-                              data-caption=""
-                            >
-                              <i class="ph-bold ph-play"></i>
-                              <span class="ripple"></span>
-                            </a>
-                          </div>
+                            src="assets/images/thumbs/proj-pos-clothing.jpg"
+                            alt="Clothing POS System Review"
+                           />
                         </div>
                         <div class="testimonial-three-content w-100">
                           <div
@@ -1764,41 +1730,28 @@
                                 ><img
                                   src="assets/images/icons/testimonial-three-icon.svg"
                                   alt="icon"
-                              /></span>
+                               /></span>
                             </div>
                             <div class="testimonial-three-review">
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
+                              <span class="text-heading tw-text-lg"><i class="ph-bold ph-star"></i></span>
+                              <span class="text-heading tw-text-lg"><i class="ph-bold ph-star"></i></span>
+                              <span class="text-heading tw-text-lg"><i class="ph-bold ph-star"></i></span>
+                              <span class="text-heading tw-text-lg"><i class="ph-bold ph-star"></i></span>
+                              <span class="text-heading tw-text-lg"><i class="ph-bold ph-star"></i></span>
                             </div>
                           </div>
                           <div class="tw-mb-15">
                             <p
                               class="testimonial-three-paragraph text-heading tw-text-2xl fw-semibold"
                             >
-                              Nemo enim ipsam voluptatem quia voluptas sit
-                              aspernatur aut odit aut fugit sed quia
-                              consequuntur magni dolores eos qui ratione
-                              voluptatem sequi nesciunt.
+                              "Abdelbaki's custom POS system revolutionized our checkout and inventory management. It is extremely fast, works completely offline without a hitch, and eliminated barcode errors."
                             </p>
                           </div>
                           <div>
                             <h2 class="tw-text-2xl fw-medium">
-                              Sophia Reynolds
+                              Retail Operations Client
                             </h2>
-                            <p class="tw-text-lg">Founder, Startup Studio</p>
+                            <p class="tw-text-lg">Store Owner &amp; Inventory Lead</p>
                           </div>
                         </div>
                       </div>
@@ -1814,22 +1767,9 @@
                         >
                           <img
                             class="w-100 h-100 tw-rounded-lg"
-                            src="assets/images/thumbs/testimonial-three-thumb2.jpg"
-                            alt="thumb"
-                          />
-                          <div
-                            class="testimonial-three-button position-absolute start-50 top-50 translate-middle"
-                          >
-                            <a
-                              class="open-popup testimonial-three-btn tw-w-220 tw-h-220 lh-1 d-inline-flex align-items-center justify-content-center bg-white text-main-two-600 tw-text-2xl position-relative z-1 hover-text-main-two-600 rounded-circle"
-                              href="https://www.youtube.com/watch?v=Fvae8nxzVz4"
-                              data-fancybox="gallery"
-                              data-caption=""
-                            >
-                              <i class="ph-bold ph-play"></i>
-                              <span class="ripple"></span>
-                            </a>
-                          </div>
+                            src="assets/images/thumbs/proj-skillbridge.jpg"
+                            alt="SkillBridge Review"
+                           />
                         </div>
                         <div class="testimonial-three-content w-100">
                           <div
@@ -1840,41 +1780,28 @@
                                 ><img
                                   src="assets/images/icons/testimonial-three-icon.svg"
                                   alt="icon"
-                              /></span>
+                               /></span>
                             </div>
                             <div class="testimonial-three-review">
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
-                              <span class="text-heading tw-text-lg"
-                                ><i class="ph-bold ph-star"></i
-                              ></span>
+                              <span class="text-heading tw-text-lg"><i class="ph-bold ph-star"></i></span>
+                              <span class="text-heading tw-text-lg"><i class="ph-bold ph-star"></i></span>
+                              <span class="text-heading tw-text-lg"><i class="ph-bold ph-star"></i></span>
+                              <span class="text-heading tw-text-lg"><i class="ph-bold ph-star"></i></span>
+                              <span class="text-heading tw-text-lg"><i class="ph-bold ph-star"></i></span>
                             </div>
                           </div>
                           <div class="tw-mb-15">
                             <p
                               class="testimonial-three-paragraph text-heading tw-text-2xl fw-semibold"
                             >
-                              Nemo enim ipsam voluptatem quia voluptas sit
-                              aspernatur aut odit aut fugit sed quia
-                              consequuntur magni dolores eos qui ratione
-                              voluptatem sequi nesciunt.
+                              "Working with Abdelbaki on SkillBridge was outstanding. His mastery over React, TypeScript, and Supabase made the platform intuitive, secure, and blazingly fast."
                             </p>
                           </div>
                           <div>
                             <h2 class="tw-text-2xl fw-medium">
-                              Daniel Roberts
+                              Academic Collaborator
                             </h2>
-                            <p class="tw-text-lg">CEO, Tech Company</p>
+                            <p class="tw-text-lg">University Project Coordinator</p>
                           </div>
                         </div>
                       </div>
@@ -1891,168 +1818,335 @@
               <div class="col-xl-12">
                 <div class="text-center tw-mb-15">
                   <h2 class="brand-three-title tw-text-xl tw-char-animation">
-                    Loved by Teams Around the World
+                    Technologies &amp; Tools in My Engineering Stack
                   </h2>
                 </div>
               </div>
             </div>
-            <div class="row gx-2">
-              <div class="col-xl-2 col-lg-6 col-md-6">
+            <div class="row g-4 justify-content-center">
+              <!-- React -->
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
                 <div
-                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
+                  class="brand-item brand-three-item position-relative z-1 d-flex flex-column align-items-center justify-content-center"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                  title="React"
+                >
+                  <span class="brand-active-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/react.svg"
+                      alt="React"
+                      style="width: 48px; height: 48px; object-fit: contain; filter: grayscale(20%);"
+                     />
+                    <span class="mt-2 fw-semibold tw-text-sm text-secondary">React</span>
+                  </span>
+                  <span class="brand-hover-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/react.svg"
+                      alt="React"
+                      style="width: 52px; height: 52px; object-fit: contain;"
+                     />
+                    <span class="mt-2 fw-bold tw-text-sm text-dark">React</span>
+                  </span>
+                </div>
+              </div>
+              <!-- Next.js -->
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                <div
+                  class="brand-item brand-three-item position-relative z-1 d-flex flex-column align-items-center justify-content-center"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="150"
+                  title="Next.js"
+                >
+                  <span class="brand-active-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/nextjs.svg"
+                      alt="Next.js"
+                      style="width: 48px; height: 48px; object-fit: contain; filter: grayscale(20%);"
+                     />
+                    <span class="mt-2 fw-semibold tw-text-sm text-secondary">Next.js</span>
+                  </span>
+                  <span class="brand-hover-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/nextjs.svg"
+                      alt="Next.js"
+                      style="width: 52px; height: 52px; object-fit: contain;"
+                     />
+                    <span class="mt-2 fw-bold tw-text-sm text-dark">Next.js</span>
+                  </span>
+                </div>
+              </div>
+              <!-- TypeScript -->
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                <div
+                  class="brand-item brand-three-item position-relative z-1 d-flex flex-column align-items-center justify-content-center"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-delay="200"
+                  title="TypeScript"
                 >
-                  <span class="brand-active-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-two-thumb1.png"
-                      alt="thumb"
-                  /></span>
-                  <span class="brand-hover-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-two-thumb11.png"
-                      alt="thumb"
-                  /></span>
+                  <span class="brand-active-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/typescript.svg"
+                      alt="TypeScript"
+                      style="width: 48px; height: 48px; object-fit: contain; filter: grayscale(20%);"
+                     />
+                    <span class="mt-2 fw-semibold tw-text-sm text-secondary">TypeScript</span>
+                  </span>
+                  <span class="brand-hover-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/typescript.svg"
+                      alt="TypeScript"
+                      style="width: 52px; height: 52px; object-fit: contain;"
+                     />
+                    <span class="mt-2 fw-bold tw-text-sm text-dark">TypeScript</span>
+                  </span>
                 </div>
               </div>
-              <div class="col-xl-2 col-lg-6 col-md-6">
+              <!-- Python -->
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
                 <div
-                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
+                  class="brand-item brand-three-item position-relative z-1 d-flex flex-column align-items-center justify-content-center"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="250"
+                  title="Python"
+                >
+                  <span class="brand-active-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/python.svg"
+                      alt="Python"
+                      style="width: 48px; height: 48px; object-fit: contain; filter: grayscale(20%);"
+                     />
+                    <span class="mt-2 fw-semibold tw-text-sm text-secondary">Python</span>
+                  </span>
+                  <span class="brand-hover-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/python.svg"
+                      alt="Python"
+                      style="width: 52px; height: 52px; object-fit: contain;"
+                     />
+                    <span class="mt-2 fw-bold tw-text-sm text-dark">Python</span>
+                  </span>
+                </div>
+              </div>
+              <!-- Go (Golang) -->
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                <div
+                  class="brand-item brand-three-item position-relative z-1 d-flex flex-column align-items-center justify-content-center"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-delay="300"
+                  title="Go (Golang)"
                 >
-                  <span class="brand-active-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-two-thumb2.png"
-                      alt="thumb"
-                  /></span>
-                  <span class="brand-hover-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-two-thumb22.png"
-                      alt="thumb"
-                  /></span>
+                  <span class="brand-active-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/go.svg"
+                      alt="Go"
+                      style="width: 54px; height: 48px; object-fit: contain; filter: grayscale(20%);"
+                     />
+                    <span class="mt-2 fw-semibold tw-text-sm text-secondary">Go (Golang)</span>
+                  </span>
+                  <span class="brand-hover-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/go.svg"
+                      alt="Go"
+                      style="width: 58px; height: 52px; object-fit: contain;"
+                     />
+                    <span class="mt-2 fw-bold tw-text-sm text-dark">Go (Golang)</span>
+                  </span>
                 </div>
               </div>
-              <div class="col-xl-2 col-lg-6 col-md-6"></div>
-              <div class="col-xl-2 col-lg-6 col-md-6">
+              <!-- Electron -->
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
                 <div
-                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
+                  class="brand-item brand-three-item position-relative z-1 d-flex flex-column align-items-center justify-content-center"
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  data-aos-delay="400"
+                  data-aos-delay="350"
+                  title="Electron"
                 >
-                  <span class="brand-active-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb55.png"
-                      alt="thumb"
-                  /></span>
-                  <span class="brand-hover-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb5.png"
-                      alt="thumb"
-                  /></span>
+                  <span class="brand-active-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/electron.svg"
+                      alt="Electron"
+                      style="width: 48px; height: 48px; object-fit: contain; filter: grayscale(20%);"
+                     />
+                    <span class="mt-2 fw-semibold tw-text-sm text-secondary">Electron</span>
+                  </span>
+                  <span class="brand-hover-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/electron.svg"
+                      alt="Electron"
+                      style="width: 52px; height: 52px; object-fit: contain;"
+                     />
+                    <span class="mt-2 fw-bold tw-text-sm text-dark">Electron</span>
+                  </span>
                 </div>
               </div>
-              <div class="col-xl-2 col-lg-6 col-md-6"></div>
-              <div class="col-xl-2 col-lg-6 col-md-6">
+
+              <!-- SQLite -->
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
                 <div
-                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
+                  class="brand-item brand-three-item position-relative z-1 d-flex flex-column align-items-center justify-content-center"
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  data-aos-delay="500"
+                  data-aos-delay="100"
+                  title="SQLite"
                 >
-                  <span class="brand-active-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-two-thumb4.png"
-                      alt="thumb"
-                  /></span>
-                  <span class="brand-hover-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-two-thumb44.png"
-                      alt="thumb"
-                  /></span>
+                  <span class="brand-active-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/sqlite.svg"
+                      alt="SQLite"
+                      style="width: 48px; height: 48px; object-fit: contain; filter: grayscale(20%);"
+                     />
+                    <span class="mt-2 fw-semibold tw-text-sm text-secondary">SQLite</span>
+                  </span>
+                  <span class="brand-hover-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/sqlite.svg"
+                      alt="SQLite"
+                      style="width: 52px; height: 52px; object-fit: contain;"
+                     />
+                    <span class="mt-2 fw-bold tw-text-sm text-dark">SQLite</span>
+                  </span>
                 </div>
               </div>
-            </div>
-            <div class="row gx-2">
-              <div class="col-xl-2 col-lg-6 col-md-6"></div>
-              <div class="col-xl-2 col-lg-6 col-md-6">
+              <!-- Docker -->
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
                 <div
-                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
+                  class="brand-item brand-three-item position-relative z-1 d-flex flex-column align-items-center justify-content-center"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="150"
+                  title="Docker"
+                >
+                  <span class="brand-active-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/docker.svg"
+                      alt="Docker"
+                      style="width: 48px; height: 48px; object-fit: contain; filter: grayscale(20%);"
+                     />
+                    <span class="mt-2 fw-semibold tw-text-sm text-secondary">Docker</span>
+                  </span>
+                  <span class="brand-hover-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/docker.svg"
+                      alt="Docker"
+                      style="width: 52px; height: 52px; object-fit: contain;"
+                     />
+                    <span class="mt-2 fw-bold tw-text-sm text-dark">Docker</span>
+                  </span>
+                </div>
+              </div>
+              <!-- Tailwind CSS -->
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                <div
+                  class="brand-item brand-three-item position-relative z-1 d-flex flex-column align-items-center justify-content-center"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-delay="200"
+                  title="Tailwind CSS"
                 >
-                  <span class="brand-active-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb33.png"
-                      alt="thumb"
-                  /></span>
-                  <span class="brand-hover-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb3.png"
-                      alt="thumb"
-                  /></span>
+                  <span class="brand-active-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/tailwindcss.svg"
+                      alt="Tailwind CSS"
+                      style="width: 48px; height: 48px; object-fit: contain; filter: grayscale(20%);"
+                     />
+                    <span class="mt-2 fw-semibold tw-text-sm text-secondary">Tailwind CSS</span>
+                  </span>
+                  <span class="brand-hover-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/tailwindcss.svg"
+                      alt="Tailwind CSS"
+                      style="width: 52px; height: 52px; object-fit: contain;"
+                     />
+                    <span class="mt-2 fw-bold tw-text-sm text-dark">Tailwind CSS</span>
+                  </span>
                 </div>
               </div>
-              <div class="col-xl-2 col-lg-6 col-md-6">
+              <!-- Supabase -->
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
                 <div
-                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
+                  class="brand-item brand-three-item position-relative z-1 d-flex flex-column align-items-center justify-content-center"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="250"
+                  title="Supabase"
+                >
+                  <span class="brand-active-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/supabase.svg"
+                      alt="Supabase"
+                      style="width: 48px; height: 48px; object-fit: contain; filter: grayscale(20%);"
+                     />
+                    <span class="mt-2 fw-semibold tw-text-sm text-secondary">Supabase</span>
+                  </span>
+                  <span class="brand-hover-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/supabase.svg"
+                      alt="Supabase"
+                      style="width: 52px; height: 52px; object-fit: contain;"
+                     />
+                    <span class="mt-2 fw-bold tw-text-sm text-dark">Supabase</span>
+                  </span>
+                </div>
+              </div>
+              <!-- OpenCV -->
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                <div
+                  class="brand-item brand-three-item position-relative z-1 d-flex flex-column align-items-center justify-content-center"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-delay="300"
+                  title="OpenCV"
                 >
-                  <span class="brand-active-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb11.png"
-                      alt="thumb"
-                  /></span>
-                  <span class="brand-hover-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb1.png"
-                      alt="thumb"
-                  /></span>
+                  <span class="brand-active-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/opencv.svg"
+                      alt="OpenCV"
+                      style="width: 48px; height: 48px; object-fit: contain; filter: grayscale(20%);"
+                     />
+                    <span class="mt-2 fw-semibold tw-text-sm text-secondary">OpenCV</span>
+                  </span>
+                  <span class="brand-hover-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/opencv.svg"
+                      alt="OpenCV"
+                      style="width: 52px; height: 52px; object-fit: contain;"
+                     />
+                    <span class="mt-2 fw-bold tw-text-sm text-dark">OpenCV</span>
+                  </span>
                 </div>
               </div>
-              <div class="col-xl-2 col-lg-6 col-md-6"></div>
-              <div class="col-xl-2 col-lg-6 col-md-6">
+              <!-- Node.js -->
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
                 <div
-                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
+                  class="brand-item brand-three-item position-relative z-1 d-flex flex-column align-items-center justify-content-center"
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  data-aos-delay="400"
+                  data-aos-delay="350"
+                  title="Node.js"
                 >
-                  <span class="brand-active-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb66.png"
-                      alt="thumb"
-                  /></span>
-                  <span class="brand-hover-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb6.png"
-                      alt="thumb"
-                  /></span>
-                </div>
-              </div>
-              <div class="col-xl-2 col-lg-6 col-md-6">
-                <div
-                  class="brand-item brand-three-item position-relative z-1 tw-mb-1"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="500"
-                >
-                  <span class="brand-active-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb22.png"
-                      alt="thumb"
-                  /></span>
-                  <span class="brand-hover-media"
-                    ><img
-                      src="assets/images/thumbs/marquee-thumb2.png"
-                      alt="thumb"
-                  /></span>
+                  <span class="brand-active-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/nodejs.svg"
+                      alt="Node.js"
+                      style="width: 48px; height: 48px; object-fit: contain; filter: grayscale(20%);"
+                     />
+                    <span class="mt-2 fw-semibold tw-text-sm text-secondary">Node.js</span>
+                  </span>
+                  <span class="brand-hover-media d-flex flex-column align-items-center justify-content-center">
+                    <img
+                      src="assets/images/brands/nodejs.svg"
+                      alt="Node.js"
+                      style="width: 52px; height: 52px; object-fit: contain;"
+                     />
+                    <span class="mt-2 fw-bold tw-text-sm text-dark">Node.js</span>
+                  </span>
                 </div>
               </div>
             </div>
@@ -2060,6 +2154,7 @@
         </section>
 
         <section
+          id="contact"
           class="footer-three-area pt-120 tw-pb-10 position-relative z-1"
         >
           <div class="container tw-container-1800-px">
@@ -2073,7 +2168,7 @@
                 >
                   <div class="tw-mb-9">
                     <h2 class="tw-text-15 text-white tw-char-animation">
-                      Let’s create something meaningful
+                      Let’s build something exceptional together
                     </h2>
                   </div>
                   <div
@@ -2081,24 +2176,25 @@
                   >
                     <a
                       class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white"
-                      href="mailto:unifexdonin@gmail.com"
-                      >unifexdonin@gmail.com</a
+                      href="mailto:abdelbaki.m.28@gmail.com"
+                      >abdelbaki.m.28@gmail.com</a
                     >
                     <span class="tw-text-2xl fw-medium text-main-600">//</span>
                     <a
                       class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white"
-                      href="tel:+442039991245"
-                      >+44 20 3999 1245</a
+                      href="tel:+213676865376"
+                      >+213 676 86 53 76</a
                     >
                   </div>
                   <div
-                    class="footer-three-top-info tw-p-705 tw-rounded-lg d-flex tw-gap-6"
+                    class="footer-three-top-info tw-p-705 tw-rounded-lg d-flex tw-gap-6 align-items-center"
                   >
                     <div class="footer-three-top-thumb tw-w-160-px">
                       <img
                         class="tw-rounded-lg w-100"
-                        src="assets/images/thumbs/footer-three-thumb.jpg"
-                        alt="thumb"
+                        src="assets/images/thumbs/abdelbaki-about.jpg"
+                        alt="Abdelbaki Nasri"
+                        style="height: 140px; object-fit: cover;"
                       />
                     </div>
                     <div
@@ -2106,31 +2202,46 @@
                     >
                       <div>
                         <h3 class="tw-text-xl text-white tw-mb-2">
-                          Maxwell Sterling
+                          Abdelbaki Nasri
                         </h3>
-                        <p class="text-white">Co-Founder & CTO</p>
+                        <p class="text-white">Software Developer &amp; Systems Builder</p>
+                        <p class="text-white-50 tw-text-sm tw-mb-2">M'sila, Algeria</p>
                       </div>
                       <div class="footer-three-social">
-                        <ul class="d-flex align-items-center tw-gap-1">
+                        <ul class="d-flex align-items-center tw-gap-2">
                           <li>
                             <a
-                              class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading"
-                              href="#"
-                              ><i class="ph ph-facebook-logo"></i
+                              class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading bg-white"
+                              href="https://github.com/Abdobaki"
+                              target="_blank"
+                              title="GitHub"
+                              ><i class="ph ph-github-logo"></i
                             ></a>
                           </li>
                           <li>
                             <a
-                              class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading"
-                              href="#"
-                              ><i class="ph ph-x-logo"></i
+                              class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading bg-white"
+                              href="https://abdobaki.github.io/my_portofilo/"
+                              target="_blank"
+                              title="Live Portfolio"
+                              ><i class="ph ph-globe"></i
                             ></a>
                           </li>
                           <li>
                             <a
-                              class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading"
-                              href="#"
-                              ><i class="ph ph-instagram-logo"></i
+                              class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading bg-white"
+                              href="mailto:abdelbaki.m.28@gmail.com"
+                              title="Email"
+                              ><i class="ph ph-envelope"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading bg-white"
+                              href="abdelbaki_cv.pdf"
+                              download="Abdelbaki_Nasri_CV.pdf"
+                              title="Download CV"
+                              ><i class="ph ph-file-pdf"></i
                             ></a>
                           </li>
                         </ul>
@@ -2146,14 +2257,16 @@
                   data-aos-duration="1000"
                   data-aos-delay="300"
                 >
-                  <form action="#">
+                  <form id="contact-form" novalidate>
                     <div class="row">
                       <div class="col-xl-12">
                         <div class="position-relative tw-mb-7">
                           <input
                             type="text"
+                            name="name"
+                            required
                             class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
-                            placeholder="First Name"
+                            placeholder="Your Name"
                           />
                         </div>
                       </div>
@@ -2161,6 +2274,8 @@
                         <div class="position-relative tw-mb-7">
                           <input
                             type="email"
+                            name="email"
+                            required
                             class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
                             placeholder="Email Address"
                           />
@@ -2169,17 +2284,21 @@
                       <div class="col-xl-12">
                         <div class="position-relative tw-mb-7">
                           <textarea
+                            name="message"
+                            required
                             class="form-control bg-transparent shadow-none tw-h-196-px tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
-                            placeholder="Message"
+                            placeholder="Describe your project or inquiry"
                           ></textarea>
                         </div>
                       </div>
                       <div class="col-xl-12">
                         <div class="contact-button">
                           <button
-                            class="tw-hover-btn bg-main-600 text-heading tw-text-xl fw-bold tw-py-4 tw-px-10 d-inline-flex justify-content-center w-100 hover-text-heading hover-bg-white tw-transition-3 tw-rounded-lg"
+                            type="submit"
+                            class="tw-hover-btn bg-main-600 text-heading tw-text-xl fw-bold tw-py-4 tw-px-10 d-inline-flex justify-content-center align-items-center tw-gap-2 w-100 hover-text-heading hover-bg-white tw-transition-3 tw-rounded-lg"
                           >
-                            submit message
+                            <span>Send Message</span>
+                            <i class="ph-bold ph-paper-plane-tilt"></i>
                           </button>
                         </div>
                       </div>
@@ -2202,31 +2321,31 @@
                       data-aos-delay="200"
                     >
                       <h4 class="tw-text-2xl text-white tw-mb-2">
-                        Quick Links
+                        Navigation
                       </h4>
                       <ul class="d-flex tw-gap-2 flex-wrap">
                         <li>
-                          <a class="tw-text-lg text-white" href="index.html"
+                          <a class="tw-text-lg text-white hover-text-main-two-600" href="#home"
                             >Home,</a
                           >
                         </li>
                         <li>
-                          <a class="tw-text-lg text-white" href="index.html"
+                          <a class="tw-text-lg text-white hover-text-main-two-600" href="#about"
                             >About Me,
                           </a>
                         </li>
                         <li>
-                          <a class="tw-text-lg text-white" href="index.html"
-                            >Portfolio,
+                          <a class="tw-text-lg text-white hover-text-main-two-600" href="#services"
+                            >Services &amp; Skills,
                           </a>
                         </li>
                         <li>
-                          <a class="tw-text-lg text-white" href="index.html"
-                            >Service,
+                          <a class="tw-text-lg text-white hover-text-main-two-600" href="#projects"
+                            >Projects,
                           </a>
                         </li>
                         <li>
-                          <a class="tw-text-lg text-white" href="index.html"
+                          <a class="tw-text-lg text-white hover-text-main-two-600" href="#contact"
                             >Contact
                           </a>
                         </li>
@@ -2239,7 +2358,8 @@
                     >
                       <a
                         class="footer-three-back-to-top tw-w-170 tw-h-170 lh-1 d-inline-flex justify-content-center align-items-center bg-main-two-600 text-white tw-text-3xl rounded-circle"
-                        href="#"
+                        href="#home"
+                        title="Back to Top"
                         ><i class="ph ph-arrow-up"></i
                       ></a>
                     </div>
@@ -2250,10 +2370,10 @@
                       data-aos-delay="400"
                     >
                       <h4 class="tw-text-2xl text-white tw-mb-2">
-                        Unifex Agency
+                        Abdelbaki Nasri
                       </h4>
                       <p class="tw-text-lg text-white">
-                        © 2025 Unifex Theme. All right reserved
+                        &copy; 2026 Abdelbaki Nasri. All rights reserved.
                       </p>
                     </div>
                   </div>
@@ -2267,7 +2387,7 @@
                 <div class="col-xl-12">
                   <div class="footer-three-bottom">
                     <h5 class="footer-three-bottom-title text-white">
-                      Noah Niko
+                      ABDELBAKI NASRI
                     </h5>
                   </div>
                 </div>
@@ -2279,7 +2399,7 @@
               class="position-absolute top-0 start-0 z-n1"
               src="assets/images/shapes/footer-three-bg-shape.png"
               alt="shape"
-            />
+             />
           </div>
         </section>
       </div>
@@ -2322,5 +2442,7 @@
     <script src="assets/js/main.js"></script>
     <!-- cursor js -->
     <script src="assets/js/tw-cursor.js"></script>
+    <!-- contact & toast js -->
+    <script src="assets/js/contact.js"></script>
   </body>
 </html>
